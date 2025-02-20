@@ -4,7 +4,7 @@ export const Header = () => {
   return (
     <header>
       <nav>
-        <ul>
+        <ul className='flex align-middle gap-4'>
           <Link href={'/'}>
             <li>Home</li>
           </Link>
