@@ -5,23 +5,23 @@ const PLACEHOLDER_IMAGE =
 
 export const Description = () => {
   return (
-    <section className="flex flex-col gap-8 lg:flex-row">
-      <figure className="relative h-80 w-80 shrink-0 self-center">
+    <section className="mx-auto my-24 grid max-w-[1000px] grid-cols-2 gap-9 rounded-3xl p-8">
+      <figure className="relative h-[300px] w-[500px]">
         <Image
           src="/images/description.jpeg"
+          className="rounded-xl object-cover shadow-lg"
           alt="products marketplace"
           fill
           placeholder="blur"
           blurDataURL={PLACEHOLDER_IMAGE}
         />
       </figure>
-      <div>
-        <h1>Descripción</h1>
-        <p className="">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad
-          molestiae, officia debitis, possimus voluptatem provident sunt vero,
-          est facere quis omnis. Sit suscipit quisquam itaque temporibus.
-          Dolore, quibusdam tempora?
+      <div className="flex flex-col justify-center">
+        <h2 className="text-2xl font-semibold">Bring the future today</h2>
+        <p className="text-lg leading-7 text-gray-700">
+          Future World: Your Gateway to Tomorrow's Tech! Dive into a world of
+          cutting-edge gadgets and gear. Stay ahead of the curve and redefine
+          your digital lifestyle with us.
         </p>
       </div>
     </section>
